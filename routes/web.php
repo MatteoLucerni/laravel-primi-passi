@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/list', function () {
-    return view('list');
+    return view('games.index');
 });
