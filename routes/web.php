@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $greet = 'Benvenuto';
     $name = 'Matteo';
-    return view('home', compact('greet', 'name'));
+    $games = [
+        ['title' => 'The Witcher', 'year' => 2015],
+        ['title' => 'Elden Ring', 'year' => 2022],
+    ];
+    return view('home', compact('greet', 'name', 'games'));
 });
 
 Route::get('/list', function () {
