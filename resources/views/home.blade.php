@@ -1,4 +1,4 @@
-<?php  ?>
+<?php ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +10,19 @@
 </head>
 
 <body>
-    <h1>{{$greet}} {{$name}}!</h1>
+    <h1>{{ $greet }} {{ $name }}!</h1>
     <!-- @dump($games) -->
     <ul>
-        <?php foreach ($games as $game) : ?>
-            <li>
-                <h3>
-                    <?= $game['title'] ?>
-                </h3>
-                <p>
-                    Data di uscita: <?= $game['year'] ?>
-                </p>
-            </li>
-        <?php endforeach ?>
+        @foreach($games as $game)
+        <li>
+            <h3>
+                {{ $game['title'] }}
+            </h3>
+            <p>
+                Data di uscita: {{ $game['year'] }}
+            </p>
+        </li>
+        @endforeach
     </ul>
 </body>
 
