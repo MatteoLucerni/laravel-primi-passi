@@ -10,20 +10,20 @@
 
 <body>
     <div class="container my-5 border border-info p-5">
-        <h1>Lista dei giochi</h1>
+        <h1>Lista dei film</h1>
         <a href="{{ route('home') }}">Torna alla home</a>
         <ul class="mt-5">
-            @forelse($games as $game)
+            @forelse($films as $film)
             <li>
                 <h3>
-                    {{ $game['title'] }}
+                    {{ $film['title'] }}
                 </h3>
                 <p>
-                    Data di uscita: {{ $game['year'] }}
+                    Data di uscita: {{ $film['year'] }}
                 </p>
             </li>
             @empty
-            <h3>Non ci sono giochi disponibili</h3>
+            <h3>Non ci sono film disponibili</h3>
             @endforelse
         </ul>
     </div>
