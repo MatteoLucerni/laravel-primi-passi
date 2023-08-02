@@ -19,6 +19,13 @@ Route::get('/', function () {
     $games = [
         ['title' => 'The Witcher', 'year' => 2015],
         ['title' => 'Elden Ring', 'year' => 2022],
+        ['title' => 'Assassin\'s Creed Valhalla', 'year' => 2020],
+        ['title' => 'Cyberpunk 2077', 'year' => 2020],
+        ['title' => 'Red Dead Redemption 2', 'year' => 2018],
+        ['title' => 'Horizon Zero Dawn', 'year' => 2017],
+        ['title' => 'The Last of Us Part II', 'year' => 2020],
+        ['title' => 'Death Stranding', 'year' => 2019],
+        ['title' => 'God of War', 'year' => 2018],
     ];
     return view('home', compact('greet', 'name', 'games'));
 });

@@ -13,7 +13,7 @@
     <h1>{{ $greet }} {{ $name }}!</h1>
     <!-- @dump($games) -->
     <ul>
-        @foreach($games as $game)
+        @forelse($games as $game)
         <li>
             <h3>
                 {{ $game['title'] }}
@@ -22,7 +22,9 @@
                 Data di uscita: {{ $game['year'] }}
             </p>
         </li>
-        @endforeach
+        @empty
+        <h3>Non ci sono giochi disponibili</h3>
+        @endforelse
     </ul>
 </body>
 
