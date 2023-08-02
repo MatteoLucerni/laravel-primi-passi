@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>CIAO!</h1>
+    <h1>CIAO {{$name}}!</h1>
 </body>
 
 </html>
