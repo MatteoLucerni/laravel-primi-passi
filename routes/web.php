@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', [
-        'name' => 'Matteo'
-    ]);
+    $greet = 'Benvenuto';
+    $name = 'Matteo';
+    return view('home', compact('greet', 'name'));
 });
 
 Route::get('/list', function () {
